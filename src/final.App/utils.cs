@@ -45,6 +45,13 @@ namespace final.App
 			}
 		}
 		public void getTasksFromFile(){
+			//taskClass tc = new taskClass();
+
+
+
+			//displayTasks(tcs);
+		}
+		private void displayTasks(taskClass[] tcs){
 
 		}
 	}
