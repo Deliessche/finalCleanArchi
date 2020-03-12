@@ -18,7 +18,7 @@ namespace final.App
 			}
 		}
 		public void addTaskInFile(taskClass task){
-			using (StreamWriter sw = File.CreateText(pathFile)){
+			using (StreamWriter sw = File.AppendText(pathFile)){
 				Console.WriteLine(task.getName());
 				sw.Write(task.getName() + ";");
 				sw.WriteLine(task.taskDate());
