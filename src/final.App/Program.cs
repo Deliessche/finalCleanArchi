@@ -6,7 +6,20 @@ namespace final.App
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            utils util = new utils();
+            Console.WriteLine("What do you want to do ?\n 1. Create new task\n 2. List all task");
+            string val = Console.ReadLine();
+            switch (val){
+                case "1":
+                    util.addTask();
+                    break;
+                case "2":
+                    //listTask();
+                    break;
+                default :
+                    Console.WriteLine("Error, renew your choice");
+                    break;
+            } 
         }
     }
 }
