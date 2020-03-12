@@ -12,7 +12,9 @@ namespace final.App
 			this.hour = _hour;
 			this.name = _name;
 		}
-		public string Name {get;}
+		public string getName(){
+			return this.name;
+		}
 		public string taskDate (){
 			return year + month + day + " " + hour; 
 		}
