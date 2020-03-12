@@ -14,7 +14,7 @@ namespace final.App
                     util.addTask();
                     break;
                 case "2":
-                    //listTask();
+                    util.getTasksFromFile();
                     break;
                 default :
                     Console.WriteLine("Error, renew your choice");

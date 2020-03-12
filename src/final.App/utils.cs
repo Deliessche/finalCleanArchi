@@ -33,10 +33,6 @@ namespace final.App
 			Console.WriteLine("Which name for this task ? ");
 			string name = Console.ReadLine();
 			
-			taskClass tc = createTask(year, month, day, hour, name);
-			return tc;
-		}
-		private taskClass createTask(string year, string month, string day, string hour, string name){
 			taskClass tc = new taskClass(year, month, day, hour, name);
 			return tc;
 		}
@@ -47,6 +43,9 @@ namespace final.App
 			}catch{
 				return false;
 			}
+		}
+		public void getTasksFromFile(){
+
 		}
 	}
 }
